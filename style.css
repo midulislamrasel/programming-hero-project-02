@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .contaner{
     width: 80%;
@@ -36,10 +37,11 @@
     margin: 20px 0px;
 }
 .title-btn{
-    padding: 10px 20px;
+    padding: 22px 51px;
     background-color: red;
     color: #fff;
-    font-size: 18px;
+    font-size: 28px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
 }
@@ -59,20 +61,18 @@ article {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 283px;
     padding: 30px;
     color: #fff;
     text-align: center;
     border-radius: 10px;
-    
 }
 
 .nav-btn{
     font-size: 18px;
-    padding: 10px;
+    padding: 17px;
     border-radius: 9px;
     border: none;
-
 } 
 .nav-0 a{
     text-decoration: none;
@@ -145,11 +145,17 @@ footer{
     display: none;
 }
 
+.nav-btn .blog-button{
+    background-color: red;
+}
 
-
+.view-all {display: none;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 
-
+.blog{
+    padding: 50px 1px;
+}
 .flag{
     display: flex;
     align-items: center;
@@ -159,13 +165,12 @@ footer{
     width: 100%;
 }
 .flag h1{
-    font-size: 30px;
+    font-size: 35px;
 }
 .blog-detail{
     padding: 20px;
-    text-align: center;
 }
-.blog-detail h1{
+.blog-detail h3{
     font-size: 25px;
 }
 .blog-detail span{
@@ -211,6 +216,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .view-all{
+        display: none;
+    }
     .nav-0{
         display: none;
         }
@@ -235,6 +243,15 @@ footer{
     }
     .nav{
         display: none;
+    }
+    .view-all {
+        padding: 16px 102px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-align: center;
+        align-items: center;
+        margin-left: 200px;
+        margin-bottom: 25px;
     }
     .nav-0 {
         display: flex;
