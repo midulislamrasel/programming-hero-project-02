@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contaner{
+    width: 80%;
+    margin:  auto;
+}
+.banner-section{
+    background-color: #000;
+    border-radius:  0px 0px 10px 10px;
+    padding: 50px 60px 0px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title-section{
+    width: 65%;
+    color: #fff;
+}
+.img-section{
+    width: 45%;
+}
+.img-section img{
+    width: 100%;
+}
+.title-section h1{
+    font-size: 5vw;
+    /* line-height: 75px; */
+    margin-top: -60px;
+}
+.title-section p{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+.title-btn{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+.title-btn .fa-thin{
+    margin-left: 5px ;
+}
+
+
+/* .................... Article..................... */
+article {
+    display: grid;
+    margin-top: 4vw;
+    gap: 25px;
+    grid-template-columns: 23% 75% ;
+}
+.nav{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.nav-btn{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+
+} 
+.nav-0 a{
+    text-decoration: none;
+    padding: 10px 60px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat( 3 ,1fr);
+    gap: 25px;
+}
+.blog{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+}
+.blog img{
+    width: 100%;
+}
+
+.blog-detail{
+    padding: 10px 20px;
+}
+.blog-btn{
+    font-size: 18px;
+    padding: 5px 25px;
+    margin: 16px 0px;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+.fa-clock{
+    margin: 20px 0px;
+    padding: 0px 40px 0px 0px;
+}
+.fa-clock span ,.fa-message span{
+    padding: 5px ;
+}
+
+
+
+
+/* ...................Footer....................... */
+footer{
+    background-color: #000;
+    padding: 150px 0px;
+    color: #fff;
+    text-align: center;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+}
+.goal{
+    width: 80%;
+    border-bottom: 2px solid rgb(194 190 190 / 34%);
+    margin: auto;
+    padding: 50px;
+}
+.footer-menu a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 20px 15px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav-0 {
+    display: none;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+.flag{
+    display: flex;
+    align-items: center;
+
+}
+.flag img{
+    width: 100%;
+}
+.flag h1{
+    font-size: 30px;
+}
+.blog-detail{
+    padding: 20px;
+    text-align: center;
+}
+.blog-detail h1{
+    font-size: 25px;
+}
+.blog-detail span{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ....................... Media query ............................. */
+/* ....................... smart phone ............................. */
+@media screen and (max-width: 767px) {
+    .banner-section{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px 0px;
+    }
+    .title-section{
+        margin-top: 70px;
+    }
+/* .........Article............. */
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 270px;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-0{
+        display: none;
+        }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        }
+}
+
+
+/* ....................... Tablet ............................. */
+@media screen and (min-width : 768px) and (max-width :1023px) {
+    article {
+        display: grid;
+        margin-top: 4vw;
+        gap: 25px;
+        grid-template-columns: 1fr ;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .nav{
+        display: none;
+    }
+    .nav-0 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ....................... Desktop ............................. */
+@media screen and  (min-width : 1024) and (max-width :2423px) {
+
+}
