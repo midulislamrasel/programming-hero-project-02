@@ -1,13 +1,20 @@
+/* -- ---------global----------------- -- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* -- ---------contaner----------------- -- */
 .contaner{
     width: 80%;
     margin:  auto;
 }
+/* -- ---------banner----------------- -- */
 .banner-section{
     background-color: #000;
     border-radius:  0px 0px 10px 10px;
@@ -80,6 +87,8 @@ article {
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
+
+/* -- ---------blogs----------------- -- */
 .blogs{
     display: grid;
     grid-template-columns: repeat( 3 ,1fr);
@@ -89,6 +98,7 @@ article {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     margin-bottom: 20px;
     border-radius: 8px;
+    padding: 50px 1px;
     
 }
 .blog img{
@@ -150,12 +160,11 @@ footer{
 }
 
 .view-all {display: none;
-}
-/* --------------------------------------------------------------------------------------------------------------- */
 
-.blog{
-    padding: 50px 1px;
+
 }
+/* ---------------------------------------- Upcoming match----------- ----------------------------------------------------------- */
+
 .flag{
     display: flex;
     align-items: center;
@@ -177,19 +186,6 @@ footer{
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ....................... Media query ............................. */
 /* ....................... smart phone ............................. */
@@ -259,15 +255,6 @@ footer{
         margin-top: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /* ....................... Desktop ............................. */
